@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Tamanna ♡</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Georgia,serifo;#background:#fff1f5;color:#fff}
+body{overflow-x:hidden}.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px;position:relative;overflow:hidden}
+.bg{position:fixed;inset:0;background:radial-gradient(circle at 50% 20%,#43213c 0,#170f1d 35%,#08070b 75%);z-index:-2}
+.stars{position:fixed;inset:0;z-index:-1;opacity:.7;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:47px 47px;animation:drift 25s linear infinite}
+@keyframes drift{to{transform:translateY(47px)}} .card{max-width:760px;width:100%;text-align:center}
+.kicker{letter-spacing:5px;text-transform:uppercase;font:12px Arial,sans-serif;opacity:.65}
+h1{font-size:clamp(48px,13vw,105px);margin:15px 0 8px;line-height:.9;font-weight:400}
+h2{font-size:clamp(32px,8vw,62px);font-weight:400;margin:10px 0 20px}
+p{font-size:18px;line-height:1.7;opacity:.82}.btn{border:1px solid #ffffff55;background:#ffffff10;color:#fff;padding:14px 25px;border-radius:999px;font-size:15px;cursor:pointer;backdrop-filter:blur(8px);transition:.25s}
+.btn:hover{background:#fff;color:#111}.hidden{display:none}.fade{animation:fade 1s ease both}@keyframes fade{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+.heart{font-size:42px;animation:pulse 1.6s infinite}@keyframes pulse{50%{transform:scale(1.15)}}
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:25px 0}.photo{aspect-ratio:1/1;object-fit:cover;width:100%;border-radius:18px;background:#ffffff12;border:1px solid #fff2}
+.photo.placeholder{display:flex;align-items:center;justify-content:center;color:#aaa;font:12px Arial,sans-serif}
+.quote{font-size:clamp(24px,5vw,38px);line-height:1.35;margin:35px auto;max-width:650px}
+.timeline{text-align:left;margin:30px auto;max-width:600px}.item{padding:0 0 28px 25px;border-left:1px solid #ffffff55;position:relative}.item:before{content:"";position:absolute;left:-5px;top:0;width:9px;height:9px;border-radius:50%;background:#fff}.item b{font:12px Arial,sans-serif;letter-spacing:2px;opacity:.55}.item p{margin-top:7px}
+.big{font-size:clamp(26px,6vw,48px);line-height:1.3}.small{font:12px Arial,sans-serif;opacity:.45;margin-top:35px}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:10}
+canvas{width:100%;height:100%}
+.music{position:fixed;right:15px;top:15px;z-index:20}
+@media(max-width:600px){.photo-grid{grid-template-columns:repeat(2,1fr)}.photo-grid .photo:last-child{display:none}}
+html,
+body {
+  background: #fff1f5 !important;
+  color: #3b2630 !important;
+}
+
+body::before {
+  background: #fff1f5 !important;
+  background-image: none !important;
+}
+
+body::after {
+  background: #fff1f5 !important;
+  background-image: none !important;
+}
+
+h1, h2, h3, h4,
+.hero-title,
+.title {
+  color: #3b2630 !important;
+}
+
+p,
+.subtitle,
+.description,
+.caption {
+  color: #5a3d48 !important;
+}
+
+button,
+.btn,
+.music-btn {
+  color: #3b2630 !important;
+  border-color: rgba(59, 38, 48, 0.35) !important;
+  background: rgba(255, 255, 255, 0.65) !important;
+}
+
+.memory .caption {
+  color: #5a3d48 !important;
+  opacity: 1 !important;
+}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="stars"></div><canvas id="confetti"></canvas>
+<button class="btn music" id="musicBtn">♫ Music</button>
+
+<section class="screen" id="s1"><div class="card fade">
+<div class="kicker">A little something for you</div>
+<div class="heart">♡</div>
+<h1>Hey,<br>Taмanna.</h1>
+<p>Don't rush this. I made this little corner of the internet just for you.</p>
+<button class="btn" onclick="next('s2')">Open it →</button>
+</div></section>
+
+<section class="screen hidden" id="s2"><div class="card fade">
+<div class="kicker">09 · 10 · 2026</div>
+<h2>Happy Birthday,<br>Taмanna 🤍</h2>
+<p class="quote">“Some people enter your life quietly… and somehow become one of the loudest parts of your heart.”</p>
+<button class="btn" onclick="next('s3')">Keep going →</button>
+</div></section>
+
+<section class="screen hidden" id="s3"><div class="card fade">
+<div class="kicker">our little universe</div>
+<h2>The memories.</h2>
+<p>Some moments become memories. Some become everything. 🫶</p>
+<div class="photo-grid">
+
+<div class="memory">
+<img class="photo" src="photos/photo1.jpg" alt="Memory 1">
+<div class="caption">Somehow your smile became one of my favorite views❤️</div>
+</div>
+
+<div class="memory">
+<img class="photo" src="photos/photo2.jpg" alt="Memory 2">
+<div class="caption">From best friends to something neither of us expected🫶</div>
+</div>
+
+<div class="memory">
+<img class="photo" src="photos/photo3.jpg" alt="Memory 3">
+<div class="caption">The girl who slowly became my favorite person🥹</div>
+</div>
+
+<div class="memory">
+<img class="photo" src="photos/photo4.jpg" alt="Memory 4">
+<div class="caption">Your smile still has a way of making everything feel better.</div>
+</div>
+
+<div class="memory">
+<img class="photo" src="photos/photo5.jpg" alt="Memory 5">
+<div class="caption">You make the little moments worth remembering.</div>
+</div>
+
+<div class="memory">
+<img class="photo" src="photos/photo6.jpg" alt="Memory 6">
+<div class="caption">Oneeee of my favorite memories ever 😭🫶🧿</div>
+</div>
+
+</div> 
+<button class="btn" onclick="next('s4')">Our story →</button>
+</div></section>
+
+<section class="screen hidden" id="s4"><div class="card fade">
+<div class="kicker">from friends to us</div><h2>Our story.</h2>
+<div class="timeline">
+<div class="item"><b>THEN</b><p>We started as best friends — just two people talking, laughing and slowly becoming important to each other.</p></div>
+<div class="item"><b>SOMEHOW</b><p>Somewhere along the way, friendship became something deeper. Something neither of us could really ignore.</p></div>
+<div class="item"><b>NOW</b><p>And somehow, you're not just a memory in my life. You're part of the life I'm building.</p></div>
+</div>
+<button class="btn" onclick="next('s5')">One last thing →</button>
+</div></section>
+
+<section class="screen hidden" id="s5"><div class="card fade">
+<div class="kicker">for you</div>
+<p class="big">Tamanna,<br><br>I hope this year gives you more reasons to smile, more moments worth remembering, and everything your heart quietly wishes for.</p>
+<p class="big">And wherever life takes us,<br>I hope we keep choosing each other.</p>
+<button class="btn" onclick="next('s6')">Open your surprise ♡</button>
+</div></section>
+
+<section class="screen hidden" id="s6"><div class="card fade">
+<div class="heart">♥</div><div class="kicker">finally</div>
+<h2>Happy Birthday,<br>my favourite person.</h2>
+<p class="quote">“Here's to everything we've already lived — and everything we haven't lived yet.”</p>
+<p class="small">Made with a little too much thought, just for you butkiiii.</p>
+</div></section>
+
+<script>
+const screens=[...document.querySelectorAll('.screen')];
+function next(id){screens.forEach(s=>s.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');window.scrollTo(0,0);if(id==='s6')burst()}
+const canvas=document.getElementById('confetti'),ctx=canvas.getContext('2d');let bits=[];
+function resize(){canvas.width=innerWidth;canvas.height=innerHeight}resize();addEventListener('resize',resize);
+function burst(){bits=Array.from({length:180},()=>({x:innerWidth/2,y:innerHeight/2,vx:(Math.random()-.5)*12,vy:(Math.random()-.8)*12,g:.18,r:Math.random()*6+3,a:1}));requestAnimationFrame(loop)}
+function loop(){ctx.clearRect(0,0,canvas.width,canvas.height);bits.forEach(b=>{b.x+=b.vx;b.y+=b.vy;b.vy+=b.g;b.a-=.006;ctx.globalAlpha=b.a;ctx.fillStyle=['#fff','#ffb3d1','#ffd166','#cdb4db'][Math.floor(Math.random()*4)];ctx.fillRect(b.x,b.y,b.r,b.r)});bits=bits.filter(b=>b.a>0);if(bits.length)requestAnimationFrame(loop)}
+let audio,playing=false;
+document.getElementById('musicBtn').onclick=async()=>{if(!audio) audio=new Audio('music.mp3');audio.loop=true;if(!playing){try{await audio.play();playing=true;document.getElementById('musicBtn').textContent='♫ On'}catch(e){alert('Add a file named music.mp3 to this folder first.')}}else{audio.pause();playing=false;document.getElementById('musicBtn').textContent='♫ Music'}};
+</script>
+</body></html>
